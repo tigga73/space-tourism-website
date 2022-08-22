@@ -1,0 +1,87 @@
+@import "./theme-config";
+
+/* ----------------------------------- */
+/* Mixin */
+/* ----------------------------------- */
+@mixin set-font-size($font-size) {
+  font-size: $font-size;
+}
+
+/* ----------------------------------- */
+/* Reset */
+/* ----------------------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: 0;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Initial setup */
+h1,
+h2,
+h3,
+h4 {
+  font-family: $primary-font;
+}
+
+h1 {
+  @include set-font-size(150px);
+}
+
+h2 {
+  @include set-font-size(100px);
+}
+
+h3 {
+  @include set-font-size(56px);
+}
+
+h4 {
+  @include set-font-size(32px);
+}
+
+h5 {
+  font-family: $secundary-font;
+  letter-spacing: 4.75px;
+}
+
+h5,
+.sub-heading-1 {
+  @include set-font-size(28px);
+}
+
+.sub-heading-1 {
+  font-family: $primary-font;
+}
+
+.sub-heading-2 {
+  @include set-font-size(14px);
+  font-family: $secundary-font;
+  letter-spacing: 2.35px;
+}
+
+body {
+  @include set-font-size(16px);
+  font-family: $secundary-font;
+}
