@@ -1,5 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+/* ----------------------------------- */
+/* Mixin */
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* Reset */
+/* ----------------------------------- */
+/* Box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: 0;
+}
 
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Initial setup */
 h1,
 h2,
 h3,
@@ -25,24 +58,140 @@ h4 {
 
 h5 {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 28px;
   letter-spacing: 4.75px;
+}
+
+h5,
+.sub-heading-1 {
+  font-size: 28px;
 }
 
 .sub-heading-1 {
   font-family: "Bellefair", serif;
-  font-size: 28px;
 }
 
 .sub-heading-2 {
-  font-family: "Barlow Condensed", sans-serif;
   font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
   letter-spacing: 2.35px;
 }
 
 body {
-  font-family: "Barlow Condensed", sans-serif;
   font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+/* ----------------------------------- */
+/* Mixin */
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* Reset */
+/* ----------------------------------- */
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: 0;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Initial setup */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bellefair", serif;
+}
+
+h1 {
+  font-size: 150px;
+}
+
+h2 {
+  font-size: 100px;
+}
+
+h3 {
+  font-size: 56px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 4.75px;
+}
+
+h5,
+.sub-heading-1 {
+  font-size: 28px;
+}
+
+.sub-heading-1 {
+  font-family: "Bellefair", serif;
+}
+
+.sub-heading-2 {
+  font-size: 14px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.35px;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+body {
+  background: url("../assets/home/background-home-desktop.jpg");
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 45px;
+}
+header img {
+  width: 48px;
+  height: 48px;
+  padding: 30px;
+}
+header ul {
+  list-style: none;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+}
+header ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+header ul li a {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2.7px;
 }
 
 /*# sourceMappingURL=style.css.map */
