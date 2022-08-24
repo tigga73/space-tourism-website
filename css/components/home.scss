@@ -8,7 +8,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 25px 45px;
+  align-items: center;
+  padding: 25px 0;
   img {
     width: 48px;
     height: 48px;
@@ -17,17 +18,43 @@ header {
 
   ul {
     list-style: none;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(10px);
+    padding: 2.25rem 4rem 2.25rem 3rem;
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 1px;
+      background-color: $light-gray;
+      left: -47%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
     li {
       display: inline-block;
       padding: 0 40px;
       a {
-        color: $withe;
+        color: $white;
         text-transform: uppercase;
         text-decoration: none;
         letter-spacing: 2.7px;
+        position: relative;
+        &:after {
+          position: absolute;
+          content: "";
+          width: 0%;
+          height: 3px;
+          background-color: $white;
+          left: 50%;
+          bottom: -2.2rem;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover:after {
+          width: 100%;
+          left: 0;
+        }
       }
     }
   }
